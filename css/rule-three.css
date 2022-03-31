@@ -1,0 +1,9 @@
+.rule-three__image {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.rule-three__image_no-space {
+  margin-bottom: 0;
+}

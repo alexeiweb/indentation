@@ -1,5 +1,9 @@
 @import url('hero.css');
 @import url('content.css');
+@import url('rule-one.css');
+@import url('rule-two.css');
+@import url('rule-three.css');
+@import url('result.css');
 
 @font-face {
   font-family: 'Roboto';
@@ -66,6 +70,11 @@ p {
   margin: 0;
 }
 
+fieldset {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
 a {
   text-decoration: none;
   color: hsl(188, 96%, 19%);
@@ -84,4 +93,16 @@ section {
   max-width: 1080px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.2;
+  color: inherit;
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-bottom: 30px;
 }

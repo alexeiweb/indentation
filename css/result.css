@@ -1,0 +1,23 @@
+.result {
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.result__container {
+  padding: 0 30px;
+}
+
+.result__title {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 19px;
+}
+
+.result__item {
+  margin-bottom: 9px;
+}
+
+.result__item:last-child {
+  margin-bottom: 29px;
+}

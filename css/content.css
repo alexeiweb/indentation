@@ -1,5 +1,6 @@
 .content {
   background-color: hsl(0, 0%, 95%);
+  margin-bottom: 25px;
 }
 
 .content__container {
@@ -9,6 +10,15 @@
 .content__title {
   font-weight: 700;
   font-size: 44px;
+}
+
+.content__list {
+  color: hsl(188, 96%, 19%);
+  
+}
+
+.content__link {
+  border-bottom: 2px solid hsl(188, 96%, 19%);
 }
 
 .content__item:not(:last-child) {

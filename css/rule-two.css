@@ -1,0 +1,22 @@
+.rule-two__image {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.rule-two__text {
+  display: inline-block;
+}
+
+.image-fieldset {
+  margin-bottom: 0;
+}
+
+.text-fieldset {
+  padding: 15px 30px;
+  color: hsl(0, 0%, 37%);
+}
+
+.rule-two__text:last-child {
+  margin-bottom: 0;
+}

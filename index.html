@@ -21,7 +21,7 @@
         <div class="hero__text">
           <p class="hero__text_item">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
 
-        <p class="hero__text_item">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
+          <p class="hero__text_item">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
         </div>
       </div>
     </section>
@@ -48,28 +48,28 @@
 
     <section class="rule-one" id="rule-one">
       <div class="container">
-        <h3 class="rule-one__title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
+        <h3 class="rule-one__title title">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
 
-        <div class="rule-one__image">
+        <div class="rule-one__image image-left">
           <img src="img/image 1.jpg" alt="Картинка с примером отступа от предыдущего элемента к следующему" width="560" height="415">
         </div>
 
-        <div class="rule-one__desc">
-          <p class="rule-one__desc_text">ВАЖНО: margin всегда задают от предыдущего элемента к следующему.</p>
+        <div class="rule-one__text">
+          <p class="rule-one__text_item text"><strong>ВАЖНО:</strong> <i>margin</i> всегда задают от предыдущего элемента к следующему.</p>
 
-          <p class="rule-one__desc_text">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется margin-right и margin-bottom.</p>
+          <p class="rule-one__text_item text">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <i>margin-right</i> и <i>margin-bottom</i>.</p>
 
-          <p class="rule-one__desc_text">(!) Свойства margin-left и margin-top используются крайне редко.</p>
+          <p class="rule-one__text_item text">(!) Свойства <i>margin-left</i> и <i>margin-top</i> используются крайне редко.</p>
 
-          <p class="rule-one__desc_text">Для padding верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+          <p class="rule-one__text_item text">Для <i>padding</i> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
         </div>
 
-        <div class="rule-one__desc">
-          <p class="rule-one__desc_text">Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.</p>
+        <div class="rule-one__text text-right">
+          <p class="rule-one__text_item text">Отступ внутри блока сверху или слева реализуется через <i>padding-top</i> и <i>padding-left</i> родителя.</p>
 
-          <p class="rule-one__desc_text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
+          <p class="rule-one__text_item text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
 
-          <p class="rule-one__desc_text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+          <p class="rule-one__text_item text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
         </div>
 
         <div class="rule-one__image">
@@ -78,72 +78,71 @@
       </div>
     </section>
 
-    <section class="rule__two">
+    <section class="rule-two">
       <div class="container">
-        <h3 class="rule__two_title">Отступ задается последнему возможному элементу в DOM-дереве</h3>
+        <h3 class="rule-two__title title">Отступ задается последнему возможному элементу в DOM-дереве</h3>
+        
+        <img class="rule-two__image" src="img/image 3.jpg" alt="" width="1080" height="537">
 
-        <div class="rule-two__image">
-          <img src="img/image 3.jpg" alt="" width="1080" height="537">
+        <img class="rule-two__image" src="img/image 4.jpg" alt="" width="600" height="450">
+        <p class="rule-two__text text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
 
-          <img src="img/image 4.jpg" alt="" width="600" height="450">
+        <fieldset>
+          <img class="rule-two__image image-fieldset" src="img/image 5.jpg" alt="" width="1080" height="427">
 
-          <p class="rule__two_text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+          <p class="rule-two__text text-fieldset"><strong>ВАЖНО:</strong> здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+        </fieldset>        
 
-          <img src="img/image 5.jpg" alt="" width="1080" height="427">
+        <p class="rule-two__text text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+        
+        <p class="rule-two__text text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
 
-          <p class="rule__two_text">ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+        <img class="rule-two__image" src="img/image 6.jpg" alt="" width="964" height="164">
 
-          <p class="rule__two_text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
-          
-          <p class="rule__two_text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
+        <p class="rule-two__text text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.</p>
 
-          <img src="img/image 6.jpg" alt="" width="964" height="164">
+        <img class="rule-two__image" src="img/image 7.jpg" alt="" width="1022" height="504">
 
-          <p class="rule__two_text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
-
-          <img src="img/image 7.jpg" alt="" width="1022" height="504">
-
-          <p class="rule__two_text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
-        </div>
+        <p class="rule-two__text text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
       </div>
     </section>
 
-    <section class="rule_three">
+    <section class="rule-three">
       <div class="container">
-        <h3 class="rule-three">Для последнего элемента группы отступ всегда обнуляется</h3>
+        <h3 class="rule-three title">Для последнего элемента группы отступ всегда обнуляется</h3>
 
-        <p class="rule__three_text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+        <p class="rule-three__text text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
 
-        <p class="rule__three_text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+        <p class="rule-three__text text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
 
-        <img src="img/image 8.jpg" alt="" width="600" height="600">
+        <img class="rule-three__image" src="img/image 8.jpg" alt="" width="600" height="600">
 
-        <p class="rule__three_text">В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.</p>
+        <p class="rule-three__text text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обеих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.</p>
 
-        <img src="img/image 9.jpg" alt="" width="600" height="607">
+        <img class="rule-three__image" src="img/image 9.jpg" alt="" width="600" height="607">
 
-        <img src="img/image 10.jpg" alt="" width="1080" height="528">
+        <img class="rule-three__image rule-three__image_no-space" src="img/image 10.jpg" alt="" width="1080" height="528">
 
-        <img src="img/image 11.jpg" alt="" width="1080" height="530">
+        <img class="rule-three__image" src="img/image 11.jpg" alt="" width="1080" height="530">
 
-        <p class="rule__three_text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+        <p class="rule-three__text text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
 
-        <img src="img/image 12.jpg" alt="" width="1080" height="88">
+        <img class="rule-three__image" src="img/image 12.jpg" alt="" width="1080" height="88">
 
-        <img src="img/image 13.jpg" alt="" width="806" height="475">
+        <img class="rule-three__image" src="img/image 13.jpg" alt="" width="806" height="475">
 
-        <p class="rule__three_text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+        <p class="rule-three__text text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
 
-        <img src="img/image 14.jpg" alt="" width="317" height="110">
+        <img class="rule-three__image" src="img/image 14.jpg" alt="" width="317" height="110">
 
-        <p class="rule__three_text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+        <p class="rule-three__text text">Советую использовать псевдоклассы <i>:last-child</i> чаще других, например так:</p>
 
-        <img src="img/image 15.jpg" alt="" width="500" height="383">
+        <img class="rule-three__image" src="img/image 15.jpg" alt="" width="500" height="383">
       </div>
     </section>
 
     <section class="result">
-      <div class="container">
+      <div class="result__container">
         <h2 class="result__title">Подытожим:</h2>
 
         <ul class="result__list">
@@ -152,19 +151,19 @@
           </li>
           
           <li class="result__item">
-            — используем только margin-right и margin-bottom
+            &mdash; используем только <i>margin-right</i> и <i>margin-bottom</i>
           </li>
 
           <li class="result__item">
-            — внешние отступы задаются только между соседями
+            &mdash; внешние отступы задаются только между соседями
           </li>
 
           <li class="result__item">
-            — внутренний отступ задаём самому верхнему элементу в дом дереве
+            &mdash; внутренний отступ задаём самому верхнему элементу в дом дереве
           </li>
           
           <li class="result__item">
-            — последнему элементу группы отступ всегда обнуляем
+            &mdash; последнему элементу группы отступ всегда обнуляем
           </li>
         </ul>
 
