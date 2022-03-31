@@ -1,0 +1,16 @@
+.content {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.content__container {
+  padding: 0 45px;
+}
+
+.content__title {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.content__item:not(:last-child) {
+  margin-bottom: 10px;
+}

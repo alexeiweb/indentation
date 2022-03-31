@@ -1,0 +1,10 @@
+.hero__title {
+  font-weight: 900;
+  font-size: 60px;
+  padding-top: 60px;
+  margin-bottom: 30px;
+}
+
+.hero__text_item:first-child {
+  margin-bottom: 30px;
+}
