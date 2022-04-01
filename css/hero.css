@@ -1,11 +1,7 @@
-.hero {
-  margin-bottom: 25px;
-}
-
 .hero__title {
   font-weight: 900;
   font-size: 60px;
-  padding-top: 60px;
+  padding-top: 35px;
   margin-bottom: 30px;
 }
 

@@ -1,10 +1,9 @@
-.content {
-  background-color: hsl(0, 0%, 95%);
-  margin-bottom: 25px;
-}
-
 .content__container {
-  padding: 0 45px;
+  max-width: 1140px;
+  background-color: hsl(0, 0%, 95%);
+  padding: 25px 45px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
 
 .content__title {
